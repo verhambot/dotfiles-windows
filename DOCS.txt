@@ -1,0 +1,38 @@
+UPDATE :
+
+- Windows Update
+- Microsoft Store Update
+- Armoury Crate
+- MyASUS
+- Blender
+- Adobe Acrobat Reader
+- Spotify
+- PowerToys
+- Sublime Text
+- Visual Studio Code
+- Powershell v7.5.0
+- Arduino IDE
+- Steam
+- Discord
+- Bitwarden
+- Notion
+- Todoist
+- Obsidian
+- Ubuntu WSL
+- Docker Desktop
+- MATLAB R2024b
+- Autodesk Fusion 360
+- Firefox
+- Google Chrome
+- Ente Auth
+- FTDI VCP Driver : https://ftdichip.com/drivers/vcp-drivers/
+- USBIPD-WIN
+- Git for Windows
+- VMWare Workstation Pro : install Windows Hypervisor Platform
+
+
+- Disable Internet Search
+	- Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Explorer\DisableSearchBoxSuggestions = 1
+
+- AMD Software: Adrenaline Edition (Context Menu)
+	- Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked\{6767B3BC-8FF7-11EC-B909-0242AC120002} = AMDSoftwareAdrenalinEdition

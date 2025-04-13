@@ -1,0 +1,14 @@
+// Documentation at https://www.sublimetext.com/docs/themes.html
+{
+    "variables":
+    {
+    },
+    "rules":
+    [
+        {
+            "class": "sidebar_tree",
+            "platforms": ["windows"],
+            "row_padding": [16, 4, 4, 4],
+        },
+    ]
+}

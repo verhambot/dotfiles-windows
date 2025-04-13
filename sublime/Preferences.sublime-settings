@@ -1,0 +1,15 @@
+{
+	"theme": "Adaptive.sublime-theme",
+	"color_scheme": "Mariana.sublime-color-scheme",
+	"ui_scale": 1.2,
+	"font_face": "Consolas",
+	"font_size": 10.5,
+	"rulers": [80],
+	"tab_size": 4,
+	"translate_tabs_to_spaces": true,
+	"indent_to_bracket": true,
+	"word_wrap": false,
+	"line_padding_top": 2.5,
+	"line_padding_bottom": 2.5,
+	"auto_complete": false
+}

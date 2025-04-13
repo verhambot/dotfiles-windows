@@ -1,2 +1,2 @@
-# dotfiles-windows
+# Windows
 My dotfiles for Windows
