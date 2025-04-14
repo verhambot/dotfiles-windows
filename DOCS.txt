@@ -36,3 +36,21 @@ UPDATE :
 
 - AMD Software: Adrenaline Edition (Context Menu)
 	- Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked\{6767B3BC-8FF7-11EC-B909-0242AC120002} = AMDSoftwareAdrenalinEdition
+
+- WSL Mirrored Networking Mode : Configuring Hyper-V Firewall
+	- Obtain WSL GUID :
+		> Get-NetFirewallHyperVVMCreator
+	- VMCreatorId : {40E0AC32-46A5-438A-A0B2-2B479E8F2E90}
+
+	- View Firewall Settings :
+		> Get-NetFirewallHyperVVMSetting -PolicyStore ActiveStore -Name '{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}'
+
+	- Set Firewall Settings :
+		> Set-NetFirewallHyperVVMSetting -Name '{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}' -DefaultInboundAction Allow
+
+	- View Firewall Rules :
+		> Get-NetFirewallHyperVRule -VMCreatorId '{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}'
+
+	- Change Inbound Rules :
+		> New-NetFirewallHyperVRule -Name MyWebServer -DisplayName "My Web Server" -Direction Inbound -VMCreatorId '{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}' -Protocol TCP -LocalPorts 80
+		> Remove-NetFirewallHyperVRule -Name MyWebServer
