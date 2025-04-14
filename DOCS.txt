@@ -34,8 +34,10 @@ UPDATE :
 - Disable Internet Search
 	- Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Explorer\DisableSearchBoxSuggestions = 1
 
+
 - AMD Software: Adrenaline Edition (Context Menu)
 	- Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked\{6767B3BC-8FF7-11EC-B909-0242AC120002} = AMDSoftwareAdrenalinEdition
+
 
 - WSL Mirrored Networking Mode : Configuring Hyper-V Firewall
 	- Obtain WSL GUID :
@@ -54,3 +56,25 @@ UPDATE :
 	- Change Inbound Rules :
 		> New-NetFirewallHyperVRule -Name MyWebServer -DisplayName "My Web Server" -Direction Inbound -VMCreatorId '{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}' -Protocol TCP -LocalPorts 80
 		> Remove-NetFirewallHyperVRule -Name MyWebServer
+
+
+- USBIPD
+	- List devices :
+		> usbipd list
+
+	- Bind device (persistent) :
+		> usbipd bind --busid <BUSID>
+
+	- Attach device (non-persisten) :
+		> usbipd attach --wsl --busid <BUSID>
+
+	- Detach device :
+		> usbipd detach --busid <BUSID>
+
+
+- Multicast DNS Resolution inside WSL
+	- Install mDNS resolution support :
+		$ sudo apt install libnss-mdns
+
+	- Change /etc/nsswitch.conf
+		hosts:          files mdns_minimal [NOTFOUND=return] dns
