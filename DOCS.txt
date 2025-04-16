@@ -29,6 +29,14 @@ UPDATE :
 - USBIPD-WIN
 - Git for Windows
 - VMWare Workstation Pro : install Windows Hypervisor Platform
+- Tailscale
+- ProtonVPN
+- Miniconda
+- Golang
+- Visual Studio Installer
+	- MSVC v143 - VS 2022 C++ x64/x86 Build Tools
+	- Windows 11 SDK
+- Rust
 
 
 - Disable Internet Search
