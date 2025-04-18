@@ -1,9 +1,0 @@
-board_manager:
-    additional_urls:
-        - https://espressif.github.io/arduino-esp32/package_esp32_index.json
-directories:
-    builtin:
-        libraries: C:\Users\Amogh Kulkarni\AppData\Local\Arduino15\libraries
-    data: c:\Users\Amogh Kulkarni\AppData\Local\Arduino15
-    user: c:\Users\Amogh Kulkarni\Projects\Arduino
-locale: en
