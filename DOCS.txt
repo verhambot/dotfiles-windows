@@ -37,14 +37,21 @@ UPDATE :
 	- MSVC v143 - VS 2022 C++ x64/x86 Build Tools
 	- Windows 11 SDK
 - Rust
+- Balena Etcher
+- Age
+- Geek Uninstaller
+- Restic
+
 
 
 - Disable Internet Search
 	- Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Explorer\DisableSearchBoxSuggestions = 1
 
 
+
 - AMD Software: Adrenaline Edition (Context Menu)
 	- Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked\{6767B3BC-8FF7-11EC-B909-0242AC120002} = AMDSoftwareAdrenalinEdition
+
 
 
 - WSL Mirrored Networking Mode : Configuring Hyper-V Firewall
@@ -66,6 +73,7 @@ UPDATE :
 		> Remove-NetFirewallHyperVRule -Name MyWebServer
 
 
+
 - WSL NAT Networking Mode : Configuring Firewall
 	> netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=<PORT> connectaddress=<WSL2 IP> connectport=<PORT>
 	> netsh advfirewall firewall add rule name=<NAME> dir=in action=allow protocol=TCP localport=<PORT>
@@ -84,6 +92,7 @@ UPDATE :
 
 	- Detach device :
 		> usbipd detach --busid <BUSID>
+
 
 
 - Multicast DNS Resolution inside WSL
