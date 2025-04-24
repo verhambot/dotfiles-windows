@@ -1,0 +1,9 @@
+C:\Users\Amogh Kulkarni\.ssh
+C:\Users\Amogh Kulkarni\Applications
+C:\Users\Amogh Kulkarni\Desktop
+C:\Users\Amogh Kulkarni\Documents
+C:\Users\Amogh Kulkarni\Downloads
+C:\Users\Amogh Kulkarni\Music
+C:\Users\Amogh Kulkarni\Pictures
+C:\Users\Amogh Kulkarni\Projects
+C:\Users\Amogh Kulkarni\Videos

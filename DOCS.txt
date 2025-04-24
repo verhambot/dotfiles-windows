@@ -101,3 +101,8 @@ UPDATE :
 
 	- Change /etc/nsswitch.conf
 		hosts:          files mdns_minimal [NOTFOUND=return] dns
+
+
+
+- Restic
+	>  restic.exe --repo "D:\Backup" --verbose=2 backup --use-fs-snapshot --files-from ".\Projects\dotfiles\restic\restic-include.txt"
